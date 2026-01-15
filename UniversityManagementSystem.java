@@ -111,14 +111,12 @@ class UniversityManager implements UniversityOperations {
         }
     }
 
-    // Sort students by marks
     public void sortByMarks() {
         studentList.sort((a, b) -> b.marks - a.marks);
         System.out.println("Students sorted by marks");
         displayStudents();
     }
 
-    // Convert HashMap to TreeMap
     public void convertHashMapToTreeMap() {
         studentTreeMap = new TreeMap<>(studentMap);
         System.out.println("HashMap converted to TreeMap");
@@ -127,7 +125,7 @@ class UniversityManager implements UniversityOperations {
         }
     }
 
-    // Count students course-wise
+
     public void countCourseWise() {
         Map<String, Integer> countMap = new HashMap<>();
 
